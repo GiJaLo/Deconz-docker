@@ -1,5 +1,14 @@
 # Deconz-docker
 Run a script to run Deconz in Docker on Synology
+## USB
+Enable USB devices
+```yaml
+/sbin/modprobe usbserial
+/sbin/modprobe ftdi_sio
+/sbin/modprobe cdc-acm
+```
+
+## Deconz
 ```yaml
 docker run -d \
     --name=deconz \
