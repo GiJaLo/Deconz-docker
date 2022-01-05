@@ -17,7 +17,7 @@ docker run -d \
     -e TZ=Europe/Brussels \
     -e DECONZ_VNC_MODE=1
     -e DECONZ_VNC_PORT=5900
-    -v /volume1/docker/deconz:/root/.local/share/dresden-elektronik/deCONZ \
+    -v /volume1/docker/deconz:/opt/deCONZ \
     --device=/dev/ttyACM0 \
-    marthoc/deconz
+    deconzcommunity/deconz
 ```
